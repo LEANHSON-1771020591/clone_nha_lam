@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 838px;
+    height: 466px;
+    margin: 30px auto;
+}
+
+.login-box {
+    width: 50%;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #218838;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.benefits-box {
+    width: 50%;
+    background-color: #28a745;
+    color: white;
+    padding: 40px;
+    text-align: left;
+}
+
+.benefits-box h2 {
+    margin-bottom: 20px;
+}
+
+.benefits-box ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.benefits-box ul li {
+    margin: 10px 0;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.btn-register:hover {
+    background-color: #218838;
+}
+
+.btn-register a {
+    text-decoration: none;
+    color: #fff;
+}

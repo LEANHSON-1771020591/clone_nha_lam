@@ -1,0 +1,139 @@
+footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-content-one {
+    width: 100%;
+    background-color: green;
+    height: 80px;
+}
+
+#footer-content-one-box {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-content-one-left {
+    height: 100%;
+    width: 410px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#footer-content-one-left img {
+    border-radius: 50%;
+    border: 1px solid rgb(124, 190, 25);
+
+}
+
+#footer-content-one-right {
+    height: 100%;
+    width: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-content-one-right p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/* form */
+.subscribe-form {
+    display: flex;
+    width: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    font-family: sans-serif;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: none;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+}
+
+.subscribe-form button {
+    background-color: #2ecc40;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #28b139;
+}
+
+/* footer content two */
+#footer-content-two {
+    width: 100%;
+    height: 100%;
+}
+
+#footer-content-two-box {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-content-two-box {
+    margin-top: 40px;
+    flex: 1;
+}
+
+/*  */
+
+.title-footer-content-two-box {
+    width: 100%;
+}
+
+.content-footer-content-two-box {
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    gap: 7px;
+}
+
+.content-footer-content-two-box i {
+    color: green;
+    font-size: 16px;
+}
+
+
+.content-footer-content-two-box a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.title-footer-content-two-box a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+}
+
+.title-footer-content-two-box img {
+    margin-top: 20px;
+}
