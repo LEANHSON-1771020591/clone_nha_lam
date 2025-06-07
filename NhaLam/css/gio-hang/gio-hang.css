@@ -1,0 +1,155 @@
+#gio-hang-title {
+    margin: 0 auto;
+    width: 1270px;
+    color: green;
+    font-weight: bolder;
+    font-size: 29px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#gio-hang-box {
+    width: 930px;
+    height: 100%;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+#gio-hang-content-title {
+    width: 930px;
+    display: grid;
+    grid-template-columns: 474px 148px 148px 148px;
+    grid-template-rows: 24px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#gio-hang-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.san-pham {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 110px 336px 146px 146px 146px;
+    grid-template-rows: 110px;
+    border-bottom: 0.5px solid rgb(209, 209, 209);
+    width: 95%;
+    margin: 0 auto;
+}
+
+#border-first {
+    border-top: 0.5px solid rgb(209, 209, 209);
+}
+
+#san-pham-img img {
+    width: 78px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#san-pham-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#san-pham-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#san-pham-cancel {
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
+
+#gia-san-pham {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: bold;
+}
+
+
+#so-luong-san-pham {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-amount {
+    height: 28px;
+    width: 28px;
+    border: 0.5px solid rgb(209, 209, 209);
+    background-color: #fff;
+}
+
+#amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 28px;
+    border: 0.5px solid rgb(209, 209, 209);
+}
+
+#tien-san-pham {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: bold;
+}
+
+#thanh-toan {
+    margin-top: 10px;
+    width: 900px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+}
+
+#thanh-toan-content {
+    width: 265px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#amount-thanh-toan {
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+}
+
+
+#btn-thanh-toan {
+    width: 265px;
+    height: 50px;
+    padding: 6px 12px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#gio-hang-time {
+    height: 100%;
+    width: 297px;
+}

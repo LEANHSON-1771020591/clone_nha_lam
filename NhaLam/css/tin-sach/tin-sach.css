@@ -1,0 +1,32 @@
+
+#tin-sach {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    height: 440px;
+}
+
+#tin-sach-title-big {
+    padding-bottom: 5px;
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tin-sach-content {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.tin-sach-title {
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+
+.tin-sach-title a {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+
+}
