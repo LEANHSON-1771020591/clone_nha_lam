@@ -1,0 +1,69 @@
+#section-six {
+    width: 1270px;
+    height: 490px;
+    margin: 30px auto;
+    border-top: green 2px solid;
+}
+
+#section-six-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#section-six-title-one {
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+}
+
+#section-six-title-two {
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+#nha-nam-book-content {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nha-nam-book {
+    width: 410px;
+    height: 394px;
+}
+
+#nha-nam-book-img {
+    width: 100%;
+    height: 260px;
+    border-radius: 6px;
+}
+
+#nha-nam-book-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#nha-nam-book-title-one {
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+#nha-nam-book-title-two {
+    margin-top: 16px;
+    color: #333;
+    width: 90%;
+
+}
+
+#nha-nam-book-date {
+    margin-top: 18px;
+    color: gray;
+}

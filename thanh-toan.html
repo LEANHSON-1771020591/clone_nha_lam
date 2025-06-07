@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/thanh-toan.css">
+</head>
+
+<body>
+    <div class="checkout">
+        <div class="checkout-left">
+            <h2 class="section-title">Thông tin nhận hàng</h2>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Họ và tên">
+                </div>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        placeholder="Số điện thoại (tùy chọn)"
+                        inputmode="numeric"
+                        pattern="[0-9]*"
+                        maxlength="11"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    >
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Địa chỉ (tùy chọn)">
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option disabled selected>Tỉnh thành</option>
+                        <option>Hà Nội</option>
+                        <option>TP HCM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Quận huyện (tùy chọn)">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Phường xã (tùy chọn)">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ghi chú (tùy chọn)" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="checkout-middle">
+            <h2 class="section-title">Vận chuyển</h2>
+            <div class="shipping-options">
+                Vui lòng nhập thông tin giao hàng
+            </div>
+            <h2 class="section-title">Thanh toán</h2>
+            <div class="payment-options">
+                <label><input type="radio" name="payment"> Thanh toán khi giao hàng (COD)</label>
+            </div>
+        </div>
+        <div class="checkout-right">
+            <div class="order-summary">
+                <h2>Đơn hàng (1 sản phẩm)</h2>
+                <div class="order-item">
+                    <img src="images/sachs/sach1.webp" alt="Product">
+                    <div class="order-item-info">
+                        <a href="#">LỊCH SỬ THẾ GIỚI QUA TRUYỆN TRANH</a>
+                        <div class="price">297.500₫</div>
+                    </div>
+                </div>
+                <div class="coupon">
+                    <input type="text" placeholder="Nhập mã giảm giá">
+                    <button type="button">Áp dụng</button>
+                </div>
+                <div class="totals">
+                    <div><span>Tạm tính</span><span>297.500₫</span></div>
+                    <div><span>Phí vận chuyển</span><span>-</span></div>
+                    <div class="total"><span>Tổng cộng</span><span>297.500₫</span></div>
+                </div>
+                <a href="#" class="btn">ĐẶT HÀNG</a>
+                <a href="#" class="back-link">‹ Quay về giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
