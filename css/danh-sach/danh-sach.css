@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: #228b22;
+  color: white;
+}
+
+.btn-success {
+  background-color: #228b22;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #228b22;
+}
+
+.table-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #228b22;
+  color: white;
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #ecf0f1;
+  vertical-align: middle;
+}
+
+.table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.book-image {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.book-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.book-author {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.price-original {
+  color: #e74c3c;
+}
+
+.price-discount {
+  color: #27ae60;
+  background-color: #d5f4e6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.stock-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stock-available {
+  background-color: #d5f4e6;
+  color: #27ae60;
+}
+
+.stock-low {
+  background-color: #fdeaa7;
+  color: orange;
+}
+
+.stock-out {
+  background-color: #fadbd8;
+  color: red;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.category-tag {
+  background-color: #e8f4f8;
+  color: #2980b9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pages-count {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.discount-badge {
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.publisher-info {
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+
+
+/* pages */
+
+#pages {
+    width: 950px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+#pages-content {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pages-content p a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+#pages-content i a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+#pages-content p:hover {
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+#pages-content i:hover {
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+#page-now {
+    border-radius: 50%;
+    border: 1px solid green;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
