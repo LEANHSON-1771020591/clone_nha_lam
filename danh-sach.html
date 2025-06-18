@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/danh-sach/danh-sach.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1>Quản lý Sách</h1>
+          <div class="header-actions">
+            <button class="btn btn-success">+ Tạo sách mới</button>
+            <button class="btn btn-primary">Xuất Excel</button>
+          </div>
+        </div>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Tìm kiếm theo tên sách, tác giả, thể loại..."
+          />
+        </div>
+
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Ảnh</th>
+                <th>Thông tin sách</th>
+                <th>Thể loại</th>
+                <th>Tác giả</th>
+                <th>Trang</th>
+                <th>Giá gốc</th>
+                <th>Giá bán</th>
+                <th>Tồn kho</th>
+                <th>NXB</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">Đắc Nhân Tâm</div>
+                  <div class="book-author">Dale Carnegie</div>
+                  <div class="pages-count">320 trang</div>
+                </td>
+                <td><span class="category-tag">Tâm lý học</span></td>
+                <td>Dale Carnegie</td>
+                <td>320</td>
+                <td>
+                  <div class="price price-original">120.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">95.000 đ</div>
+                  <div class="price-discount">Giảm 20%</div>
+                </td>
+                <td><span class="stock-badge stock-available">25</span></td>
+                <td class="publisher-info">NXB Tổng Hợp TP.HCM</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">Sapiens: Lược sử loài người</div>
+                  <div class="book-author">Yuval Noah Harari</div>
+                  <div class="pages-count">512 trang</div>
+                </td>
+                <td><span class="category-tag">Lịch sử</span></td>
+                <td>Yuval Noah Harari</td>
+                <td>512</td>
+                <td>
+                  <div class="price price-original">180.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">150.000 đ</div>
+                  <div class="price-discount">Giảm 16%</div>
+                </td>
+                <td><span class="stock-badge stock-low">8</span></td>
+                <td class="publisher-info">NXB Thế Giới</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">Nhà Giả Kim</div>
+                  <div class="book-author">Paulo Coelho</div>
+                  <div class="pages-count">256 trang</div>
+                </td>
+                <td><span class="category-tag">Tiểu thuyết</span></td>
+                <td>Paulo Coelho</td>
+                <td>256</td>
+                <td>
+                  <div class="price price-original">85.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">70.000 đ</div>
+                  <div class="price-discount">Giảm 18%</div>
+                </td>
+                <td><span class="stock-badge stock-available">42</span></td>
+                <td class="publisher-info">NXB Hội Nhà Văn</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">Tư Duy Nhanh Và Chậm</div>
+                  <div class="book-author">Daniel Kahneman</div>
+                  <div class="pages-count">624 trang</div>
+                </td>
+                <td><span class="category-tag">Kinh tế</span></td>
+                <td>Daniel Kahneman</td>
+                <td>624</td>
+                <td>
+                  <div class="price price-original">220.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">185.000 đ</div>
+                  <div class="price-discount">Giảm 15%</div>
+                </td>
+                <td><span class="stock-badge stock-out">0</span></td>
+                <td class="publisher-info">NXB Thế Giới</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">Homo Deus: Lược sử tương lai</div>
+                  <div class="book-author">Yuval Noah Harari</div>
+                  <div class="pages-count">448 trang</div>
+                </td>
+                <td><span class="category-tag">Khoa học</span></td>
+                <td>Yuval Noah Harari</td>
+                <td>448</td>
+                <td>
+                  <div class="price price-original">195.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">165.000 đ</div>
+                  <div class="price-discount">Giảm 15%</div>
+                </td>
+                <td><span class="stock-badge stock-available">15</span></td>
+                <td class="publisher-info">NXB Thế Giới</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <img
+                    src="images/new-book/new-book-1.webp"
+                    alt="Sách"
+                    class="book-image"
+                  />
+                </td>
+                <td>
+                  <div class="book-title">7 Thói Quen Hiệu Quả</div>
+                  <div class="book-author">Stephen R. Covey</div>
+                  <div class="pages-count">384 trang</div>
+                </td>
+                <td><span class="category-tag">Phát triển bản thân</span></td>
+                <td>Stephen R. Covey</td>
+                <td>384</td>
+                <td>
+                  <div class="price price-original">140.000 đ</div>
+                </td>
+                <td>
+                  <div class="price price-original">115.000 đ</div>
+                  <div class="price-discount">Giảm 18%</div>
+                </td>
+                <td><span class="stock-badge stock-available">32</span></td>
+                <td class="publisher-info">NXB Tổng Hợp TP.HCM</td>
+                <td>
+                  <div class="action-buttons">
+                    <button class="btn btn-primary btn-sm">Sửa</button>
+                    <button class="btn btn-danger btn-sm">Xóa</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="pages">
+          <div id="pages-content">
+            <i class="ri-arrow-left-s-line"><a href=""></a></i>
+            <p class="page" id="page-now"><a href="">1</a></p>
+            <p class="page"><a href="">2</a></p>
+            <p class="page"><a href="">3</a></p>
+            <p class="page"><a href="">...</a></p>
+            <p class="page"><a href="">50</a></p>
+            <i class="ri-arrow-right-s-line"><a href=""></a></i>
+          </div>
+        </div>
+        ''
+      </div>
+    </main>
+    <script src="js/danh-sach.js"></script>
+  </body>
+</html>

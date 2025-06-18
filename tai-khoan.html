@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tai-khoan/tai-khoan.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1>Quản lý tài khoản</h1>
+        </div>
+
+        <div class="search-section">
+          <input type="text" class="search-input" placeholder="Tìm kiếm" />
+          <button class="btn btn-primary">+ Tạo tài khoản</button>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Role</th>
+                <th>Trạng thái</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Admin</td>
+                <td>admin@gmail.com</td>
+                <td>0938283923</td>
+                <td><span class="badge badge-admin">Admin</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(1, 'Người dùng')"
+                        >Chuyển thành Người dùng</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Nhân viên 1</td>
+                <td>nhanvien1@gmail.com</td>
+                <td>0338728372</td>
+                <td><span class="badge badge-user">Người dùng</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(2, 'Admin')"
+                        >Chuyển thành Admin</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Admin2</td>
+                <td>admin2@gmail.com</td>
+                <td>0938283923</td>
+                <td><span class="badge badge-admin">Admin</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(3, 'Người dùng')"
+                        >Chuyển thành Người dùng</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Client</td>
+                <td>client@gmail.com</td>
+                <td>0938283923</td>
+                <td><span class="badge badge-user">Người dùng</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(4, 'Admin')"
+                        >Chuyển thành Admin</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Ldtunga1</td>
+                <td>ldtunga1@gmail.com</td>
+                <td>0934386641</td>
+                <td><span class="badge badge-user">Người dùng</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(5, 'Admin')"
+                        >Chuyển thành Admin</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Testuser</td>
+                <td>testuser@gmail.com</td>
+                <td>0934386641</td>
+                <td><span class="badge badge-user">Người dùng</span></td>
+                <td><span class="badge status-active">Hoạt động</span></td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-dark">Thay đổi quyền</button>
+                    <div class="dropdown-content">
+                      <a href="#" onclick="changeRole(6, 'Admin')"
+                        >Chuyển thành Admin</a
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button>‹</button>
+          <button class="active">1</button>
+          <button>›</button>
+        </div>
+      </div>
+
+      <!-- Modal xác nhận thay đổi role -->
+      <div id="roleModal" class="modal">
+        <div class="modal-content">
+          <h3>Xác nhận thay đổi quyền</h3>
+          <p id="modalMessage"></p>
+          <div class="modal-buttons">
+            <button class="btn btn-confirm" onclick="confirmRoleChange()">
+              Xác nhận
+            </button>
+            <button class="btn btn-cancel" onclick="closeModal()">Hủy</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/tai-khoan.js"></script>
+  </body>
+</html>

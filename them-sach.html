@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm Sách Mới</title>
+    <link rel="stylesheet" href="css/them-sach/them-sach.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Thêm Sách Mới</h1>
+        <p>Điền thông tin chi tiết về cuốn sách</p>
+      </div>
+
+      <div class="form-container">
+        <div class="success-message" id="successMessage">
+          Thêm sách thành công!
+        </div>
+
+        <form id="bookForm">
+          <div class="form-grid">
+            <!-- Tên sách -->
+            <div class="form-group">
+              <label for="title">Tên sách <span class="required">*</span></label>
+              <input type="text" id="title" name="title" required />
+            </div>
+
+            <!-- Thể loại -->
+            <div class="form-group">
+              <label for="category">Thể loại <span class="required">*</span></label>
+              <select id="category" name="category" required>
+                <option value="">Chọn thể loại</option>
+                <option value="hu-cau">Hư cấu</option>
+                <option value="van-hoc-hien-dai">Văn học hiện đại</option>
+                <option value="van-hoc-kinh-dien">Văn học kinh điển</option>
+                <option value="lich-su">Văn học thiếu nhi</option>
+                <option value="lang-man">Lãng mạn</option>
+                <option value="ky-ao">Kỳ ảo</option>
+                <option value="trinh-tham-kinh-di">Trinh thám - Kinh dị</option>
+                <option value="vien-tuong">Khoa học viễn tưởng</option>
+                <option value="phieu-luu-ly-ky">Phiêu lưu ly kỳ</option>
+                <option value="tan-van">Tản văn</option>
+                <option value="truyen-tranh-graphic-novel">Truyện tranh (graphic novel)</option>
+                <option value="tho-kich">Thơ - Kịch</option>
+                <option value="light-novel">Light novel</option>
+                <option value="sach-to-mau">Sách tô màu</option>
+                <option value="phi-hu-cau">Phi hư cấu</option>
+                <option value="triet-hoc">Triết học</option>
+                <option value="lich-su-1">Sử học</option>
+                <option value="khoa-hoc">Khoa học</option>
+                <option value="kinh-doanh">Kinh doanh</option>
+                <option value="ky-nang">Kỹ năng</option>
+                <option value="nghe-thuat">Nghệ thuật</option>
+                <option value="nuoi-day-con">Nuôi dạy con</option>
+                <option value="tam-ly-hoc">Tâm lý học</option>
+                <option value="y-hoc-suc-khoe">Y học - Sức khỏe</option>
+                <option value="thieu-nhi">Thiếu nhi</option>
+                <option value="0-5-tuoi">0-5 tuổi</option>
+                <option value="6-8-tuoi">6-8 tuổi</option>
+                <option value="9-12-tuoi">9-12 tuổi</option>
+                <option value="13-15-tuoi">13-15 tuổi</option>
+                <option value="phan-loai-khac">Phân loại khác</option>
+                <option value="sach-moi-xuat-ban">Sách mới xuất bản</option>
+                <option value="sach-sap-xuat-ban">Sách sắp xuất bản</option>
+                <option value="sach-duoc-giai-thuong">Sách được giải thưởng</option>
+                <option value="sach-pop-up-lift-the-flaps">Pop-up, lift-the-flaps</option>
+                <option value="sach-chu-de-dong-duong">Nghiên cứu Việt Nam</option>
+                <option value="tac-gia-viet-nam">Tác giả Việt Nam</option>
+              </select>
+            </div>
+
+            <!-- Tác giả và các thông tin khác -->
+            <div class="form-group">
+              <label for="author">Tác giả <span class="required">*</span></label>
+              <input type="text" id="author" name="author" required />
+            </div>
+
+            <div class="form-group">
+              <label for="author_link">Link tác giả</label>
+              <input type="url" id="author_link" name="author_link" placeholder="https://..." />
+            </div>
+
+            <div class="form-group">
+              <label for="translator">Dịch giả</label>
+              <input type="text" id="translator" name="translator" />
+            </div>
+
+            <div class="form-group">
+              <label for="publisher">Nhà xuất bản</label>
+              <input type="text" id="publisher" name="publisher" />
+            </div>
+
+            <div class="form-group">
+              <label for="size">Kích thước</label>
+              <input type="text" id="size" name="size" placeholder="" />
+            </div>
+
+            <div class="form-group">
+              <label for="pages">Số trang</label>
+              <input type="number" id="pages" name="pages" min="1" />
+            </div>
+
+            <div class="form-group">
+              <label for="stock">Số lượng tồn kho <span class="required">*</span></label>
+              <input type="number" id="stock" name="stock" min="0" required />
+            </div>
+
+            <div class="form-group">
+              <label for="release_date">Ngày phát hành</label>
+              <input type="text" id="release_date" name="release_date" placeholder="" />
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="description">Mô tả sách</label>
+            <textarea id="description" name="description" placeholder="Nhập mô tả chi tiết về nội dung cuốn sách..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Giá cả</label>
+            <div class="price-group">
+              <div>
+                <label for="price">Giá hiện tại (VNĐ) <span class="required">*</span></label>
+                <input type="number" id="price" name="price" min="0" step="1000" required />
+              </div>
+              <div>
+                <label for="price_old">Giá cũ (VNĐ)</label>
+                <input type="number" id="price_old" name="price_old" min="0" step="1000" />
+              </div>
+              <div>
+                <label for="discount">Giảm giá (%)</label>
+                <input type="number" id="discount" name="discount" min="0" max="100" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="book_img">Hình ảnh sách</label>
+              <div class="file-input-wrapper">
+                <input type="file" id="book_img" name="book_img" accept="image/*" class="file-input" />
+                <div class="file-input-display">
+                  Chọn hình ảnh sách
+                  <div id="fileName"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="book_url">Link sản phẩm</label>
+              <input type="url" id="book_url" name="book_url" placeholder="https://..." />
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">Thêm Sách</button>
+            <button type="reset" class="btn btn-secondary">Làm Mới</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
